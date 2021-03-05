@@ -7,8 +7,11 @@ FLASK RESTFUL API INSTRUCTIONS: To run the Flask API, it needs to run on a local
 To run the virtual environment do the following (instructions for windows OS only), start with going into command prompt:
 
 1.Go to root directory of this folder
+
 2.Enter '.\Scripts\activate' to activate the virtual environment
+
 3.Go to src folder
+
 4.Enter 'python manage.py runserver 127.0.0.1:8000' to run the local server or choose whatever address or port number you want
 
 RESTFUL API AUTHENTICATION
