@@ -24,4 +24,5 @@ To refresh an expired token, you can use http://127.0.0.1:8000/api/token/refresh
 NOTE: You can authenticate as admin with the username 'admin' and password 'pass'
 
 RESTFUL API ENDPOINTS
+
 The API endpoints are broken down into catrgories, these are USERS, FORUMS, POSTS, COMMENTS, REPLYS
