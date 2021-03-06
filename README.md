@@ -7,8 +7,11 @@ FLASK RESTFUL API INSTRUCTIONS: To run the Flask API, it needs to run on a local
 To run the virtual environment do the following (instructions for windows OS only), start with going into command prompt:
 
 1.Go to root directory of this folder
+
 2.Enter '.\Scripts\activate' to activate the virtual
+
 3.Go to src folder
+
 4.Enter 'python manage.py runserver 127.0.0.1:8000' to run the local server or choose whatever address or port number you want
 
 RESTFUL API AUTHENTICATION
@@ -30,6 +33,7 @@ NOTE: Endpoints that return multiple results will only show 10 results per page.
 NOTE: When sending files with data, both the files and data must be sent as form data with header Content-Type: multipart/form-data instead of Content-Type: application/json, for example in curl you can use curl -X PUT -H 'Content-Type: multipart/form-data' -H "Authorization: Bearer *Your access token*" -F 'image=@*your file path*' -F 'username=admin' -F 'email=admin@gmail.<span></span>com' http:<span></span>//127.0.0.1:8000/api/users/1/
  
 --- USERS ENDPOINTS ---
+
 ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/
 METHOD: GET
 DESCRIPTION: Get details of all users accounts
@@ -78,6 +82,7 @@ DESCRIPTION: Set user image to default image
 HEADER: Authorization: Bearer *Your access token*
 
 --- FORUMS ENDPOINTS ---
+
 ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/
 METHOD: GET
 DESCRIPTION: Get details of all forums
@@ -111,6 +116,7 @@ DESCRIPTION: Set forum image to default image
 HEADER: Authorization: Bearer *Your access token*
 
 --- POSTS ENDPOINT ---
+
 ENDPOINT: http:<span></span>//127.0.0.1:8000/api/posts/
 METHOD: GET
 DESCRIPTION: Get details of all posts
@@ -138,6 +144,7 @@ DESCRIPTION: Delete user's post
 HEADER: Authorization: Bearer *Your access token*
 
 --- COMMENTS ENDPOINT ---
+
 ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/
 METHOD: GET
 DESCRIPTION: Get details of all comments
@@ -165,6 +172,7 @@ DESCRIPTION: Delete user's comment
 HEADER: Authorization: Bearer *Your access token*
 
 --- REPLYS ENDPOINT ---
+
 ENDPOINT: http:<span></span>//127.0.0.1:8000/api/replys/
 METHOD: GET
 DESCRIPTION: Get details of all replys
