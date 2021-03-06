@@ -29,7 +29,7 @@ The API endpoints are broken down into catrgories, these are USERS, FORUMS, POST
 NOTE: Endpoints that return multiple results will only show 10 results per page. To navigate through each page, add the query param 'page' with the page number into URL endpoint
 NOTE: When sending files with data, both the files and data must be sent as form data with header Content-Type: multipart/form-data instead of Content-Type: application/json, for example in curl you can use curl -X PUT -H 'Content-Type: multipart/form-data' -H "Authorization: Bearer *Your access token*" -F 'image=@*your file path*' -F 'username=admin' -F 'email=admin@gmail.<span></span>com' http:<span></span>//127.0.0.1:8000/api/users/1/
  
-<h3>--- USERS ENDPOINTS ---</h3>
+<h3>USERS ENDPOINTS</h3>
 
 ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/ <br/>
 METHOD: GET <br/>
@@ -78,7 +78,7 @@ METHOD: PUT <br/>
 DESCRIPTION: Set user image to default image <br/>
 HEADER: Authorization: Bearer *Your access token* <br/>
 
---- FORUMS ENDPOINTS ---
+<h3>FORUMS ENDPOINTS</h3>
 
 ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/ <br/>
 METHOD: GET <br/>
@@ -112,7 +112,7 @@ METHOD: PUT <br/>
 DESCRIPTION: Set forum image to default image <br/>
 HEADER: Authorization: Bearer *Your access token* <br/>
 
---- POSTS ENDPOINT ---
+<h3>POSTS ENDPOINT</h3>
 
 ENDPOINT: http:<span></span>//127.0.0.1:8000/api/posts/ <br/>
 METHOD: GET <br/>
@@ -140,7 +140,7 @@ METHOD: DELETE <br/>
 DESCRIPTION: Delete user's post <br/>
 HEADER: Authorization: Bearer *Your access token* <br/>
 
---- COMMENTS ENDPOINT ---
+<h3>COMMENTS ENDPOINT</h3>
 
 ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/ <br/>
 METHOD: GET <br/>
@@ -168,7 +168,7 @@ METHOD: DELETE <br/>
 DESCRIPTION: Delete user's comment <br/>
 HEADER: Authorization: Bearer *Your access token* <br/>
 
---- REPLYS ENDPOINT ---
+<h3>REPLYS ENDPOINT</h3>
 
 ENDPOINT: http:<span></span>//127.0.0.1:8000/api/replys/ <br/>
 METHOD: GET <br/>
