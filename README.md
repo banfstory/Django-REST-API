@@ -42,75 +42,75 @@ DESCRIPTION: Register a user account <br/>
 HEADER: Content-Type: application/json <br/>
 DATA: username, email, password <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/<int:pk>/
-METHOD: GET
-DESCRIPTION: Get a user account
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/<int:pk>/ <br/>
+METHOD: GET <br/>
+DESCRIPTION: Get a user account <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/<int:pk>/
-METHOD: PUT
-DESCRIPTION: Update user account details
-HEADER: Content-Type: application/json (without image file), 'Content-Type: multipart/form-data' (with image file), Authorization: Bearer *Your access token*
-FILE: image
-DATA: username, email
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/<int:pk>/ <br/>
+METHOD: PUT <br/>
+DESCRIPTION: Update user account details <br/>
+HEADER: Content-Type: application/json (without image file), 'Content-Type: multipart/form-data' (with image file), Authorization: Bearer *Your access token* <br/>
+FILE: image <br/>
+DATA: username, email <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/followers/
-METHOD: GET
-DESCRIPTION: Get followers list of which users are following which forums
-PARAM: user, forum
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/followers/ <br/>
+METHOD: GET <br/>
+DESCRIPTION: Get followers list of which users are following which forums <br/>
+PARAM: user, forum <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/followers/
-METHOD: POST
-DESCRIPTION: User follows a forum
-HEADER: Content-Type: application/json, Authorization: Bearer *Your access token*
-DATA: forum
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/followers/ <br/>
+METHOD: POST <br/>
+DESCRIPTION: User follows a forum <br/>
+HEADER: Content-Type: application/json, Authorization: Bearer *Your access token* <br/>
+DATA: forum <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/<int:pk>/followers/
-METHOD: GET
-DESCRIPTION: Get a instance of a user who is following a forum
-DATA: forum
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/<int:pk>/followers/ <br/>
+METHOD: GET <br/>
+DESCRIPTION: Get a instance of a user who is following a forum <br/>
+DATA: forum <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/<int:pk>/followers/
-METHOD: DELETE
-DESCRIPTION: User unfollows a forum
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/<int:pk>/followers/ <br/>
+METHOD: DELETE <br/>
+DESCRIPTION: User unfollows a forum <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/default-image/
-METHOD: PUT
-DESCRIPTION: Set user image to default image
-HEADER: Authorization: Bearer *Your access token*
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/default-image/ <br/>
+METHOD: PUT <br/>
+DESCRIPTION: Set user image to default image <br/>
+HEADER: Authorization: Bearer *Your access token* <br/>
 
 --- FORUMS ENDPOINTS ---
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/
-METHOD: GET
-DESCRIPTION: Get details of all forums
-QUERY PARAMS: q, name, owner, page
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/ <br/>
+METHOD: GET <br/>
+DESCRIPTION: Get details of all forums <br/>
+QUERY PARAMS: q, name, owner, page <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/
-METHOD: POST
-DESCRIPTION: Create forum
-HEADER: Content-Type: application/json
-DATA: name, about
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/ <br/>
+METHOD: POST <br/>
+DESCRIPTION: Create forum <br/>
+HEADER: Content-Type: application/json <br/>
+DATA: name, about <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/<int:pk>/
-METHOD: GET
-DESCRIPTION: Get a user account
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/<int:pk>/ <br/>
+METHOD: GET <br/>
+DESCRIPTION: Get a user account <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/<int:pk>/
-METHOD: PUT
-DESCRIPTION: Update user's forum details
-HEADER: Content-Type: application/json (without image file), 'Content-Type: multipart/form-data' (with image file), Authorization: Bearer *Your access token*
-FILE: image
-DATA: name, about
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/<int:pk>/ <br/>
+METHOD: PUT <br/>
+DESCRIPTION: Update user's forum details <br/>
+HEADER: Content-Type: application/json (without image file), 'Content-Type: multipart/form-data' (with image file), Authorization: Bearer *Your access token* <br/>
+FILE: image <br/>
+DATA: name, about <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/<int:pk>/
-METHOD: DELETE
-DESCRIPTION: Delete forum
-HEADER: Authorization: Bearer *Your access token*
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/<int:pk>/ <br/>
+METHOD: DELETE <br/>
+DESCRIPTION: Delete forum <br/>
+HEADER: Authorization: Bearer *Your access token* <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/<int:pk>/default-image/
-METHOD: PUT
-DESCRIPTION: Set forum image to default image
-HEADER: Authorization: Bearer *Your access token*
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/forums/<int:pk>/default-image/ <br/>
+METHOD: PUT <br/>
+DESCRIPTION: Set forum image to default image <br/>
+HEADER: Authorization: Bearer *Your access token* <br/>
 
 --- POSTS ENDPOINT ---
 
