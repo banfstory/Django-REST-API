@@ -31,16 +31,16 @@ NOTE: When sending files with data, both the files and data must be sent as form
  
 --- USERS ENDPOINTS ---
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/
-METHOD: GET
-DESCRIPTION: Get details of all users accounts
-QUERY PARAMS: q, username, page
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/ <br/>
+METHOD: GET <br/>
+DESCRIPTION: Get details of all users accounts <br/>
+QUERY PARAMS: q, username, page <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/
-METHOD: POST
-DESCRIPTION: Register a user account
-HEADER: Content-Type: application/json
-DATA: username, email, password
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/ <br/>
+METHOD: POST <br/>
+DESCRIPTION: Register a user account <br/>
+HEADER: Content-Type: application/json <br/>
+DATA: username, email, password <br/>
 
 ENDPOINT: http:<span></span>//127.0.0.1:8000/api/users/<int:pk>/
 METHOD: GET
