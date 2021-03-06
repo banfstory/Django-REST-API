@@ -114,85 +114,85 @@ HEADER: Authorization: Bearer *Your access token* <br/>
 
 --- POSTS ENDPOINT ---
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/posts/
-METHOD: GET
-DESCRIPTION: Get details of all posts
-QUERY PARAMS: forum, user
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/posts/ <br/>
+METHOD: GET <br/>
+DESCRIPTION: Get details of all posts <br/>
+QUERY PARAMS: forum, user <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/posts/
-METHOD: POST
-DESCRIPTION: Create post for the forum
-HEADER: Content-Type: application/json, Authorization: Bearer *Your access token*
-DATA: title, content, forum
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/posts/ <br/>
+METHOD: POST <br/>
+DESCRIPTION: Create post for the forum <br/>
+HEADER: Content-Type: application/json, Authorization: Bearer *Your access token* <br/>
+DATA: title, content, forum <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/posts/<int:pk>/
-METHOD: GET
-DESCRIPTION: Get details of a post
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/posts/<int:pk>/ <br/>
+METHOD: GET <br/>
+DESCRIPTION: Get details of a post <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/posts/<int:pk>/
-METHOD: PUT
-DESCRIPTION: Update user's post details
-HEADER: Content-Type: application/json, Authorization: Bearer *Your access token*
-DATA: title, content
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/posts/<int:pk>/ <br/>
+METHOD: PUT <br/>
+DESCRIPTION: Update user's post details <br/>
+HEADER: Content-Type: application/json, Authorization: Bearer *Your access token* <br/>
+DATA: title, content <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/posts/<int:pk>/
-METHOD: DELETE
-DESCRIPTION: Delete user's post
-HEADER: Authorization: Bearer *Your access token*
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/posts/<int:pk>/ <br/>
+METHOD: DELETE <br/>
+DESCRIPTION: Delete user's post <br/>
+HEADER: Authorization: Bearer *Your access token* <br/>
 
 --- COMMENTS ENDPOINT ---
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/
-METHOD: GET
-DESCRIPTION: Get details of all comments
-QUERY PARAMS: post, user
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/ <br/>
+METHOD: GET <br/>
+DESCRIPTION: Get details of all comments <br/>
+QUERY PARAMS: post, user <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/
-METHOD: POST
-DESCRIPTION: Create comment for the post
-HEADER: Content-Type: application/json, Authorization: Bearer *Your access token*
-DATA: content, post
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/ <br/>
+METHOD: POST <br/>
+DESCRIPTION: Create comment for the post <br/>
+HEADER: Content-Type: application/json, Authorization: Bearer *Your access token* <br/>
+DATA: content, post <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/<int:pk>/
-METHOD: GET
-DESCRIPTION: Get details of a comment
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/<int:pk>/ <br/>
+METHOD: GET <br/>
+DESCRIPTION: Get details of a comment <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/<int:pk>/
-METHOD: PUT
-DESCRIPTION: Update user's comment details
-HEADER: Content-Type: application/json, Authorization: Bearer *Your access token*
-DATA: content
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/<int:pk>/ <br/>
+METHOD: PUT <br/>
+DESCRIPTION: Update user's comment details <br/>
+HEADER: Content-Type: application/json, Authorization: Bearer *Your access token* <br/>
+DATA: content <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/<int:pk>/
-METHOD: DELETE
-DESCRIPTION: Delete user's comment
-HEADER: Authorization: Bearer *Your access token*
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/<int:pk>/ <br/>
+METHOD: DELETE <br/>
+DESCRIPTION: Delete user's comment <br/>
+HEADER: Authorization: Bearer *Your access token* <br/>
 
 --- REPLYS ENDPOINT ---
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/replys/
-METHOD: GET
-DESCRIPTION: Get details of all replys
-QUERY PARAMS: comment, user
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/replys/ <br/>
+METHOD: GET <br/>
+DESCRIPTION: Get details of all replys <br/>
+QUERY PARAMS: comment, user <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/replys/
-METHOD: POST
-DESCRIPTION: Create reply for the comment
-HEADER: Content-Type: application/json, Authorization: Bearer *Your access token*
-DATA: content, comment
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/replys/ <br/>
+METHOD: POST <br/>
+DESCRIPTION: Create reply for the comment <br/>
+HEADER: Content-Type: application/json, Authorization: Bearer *Your access token* <br/>
+DATA: content, comment <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/replys/<int:pk>/
-METHOD: GET
-DESCRIPTION: Get details of a reply
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/replys/<int:pk>/ <br/>
+METHOD: GET <br/>
+DESCRIPTION: Get details of a reply <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/<int:pk>/
-METHOD: PUT
-DESCRIPTION: Update user's reply details
-HEADER: Content-Type: application/json, Authorization: Bearer *Your access token*
-DATA: content
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/comments/<int:pk>/ <br/>
+METHOD: PUT <br/>
+DESCRIPTION: Update user's reply details <br/>
+HEADER: Content-Type: application/json, Authorization: Bearer *Your access token* <br/>
+DATA: content <br/>
 
-ENDPOINT: http:<span></span>//127.0.0.1:8000/api/replys/<int:pk>/
-METHOD: DELETE
-DESCRIPTION: Delete user's reply
-HEADER: Authorization: Bearer *Your access token*
+ENDPOINT: http:<span></span>//127.0.0.1:8000/api/replys/<int:pk>/ <br/>
+METHOD: DELETE <br/>
+DESCRIPTION: Delete user's reply <br/>
+HEADER: Authorization: Bearer *Your access token* <br/>
 
